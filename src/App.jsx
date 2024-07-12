@@ -7,7 +7,7 @@ import githublight from './assets/github-light.svg'
 import twitterlight from './assets/twitter-light.svg'
 import linkedinlight from './assets/linkedin-light.svg'
 import resume from './assets/shawnMonteiro.pdf'
-
+import Projects from './components/Projects.jsx'
 
 import twitterdark from './assets/twitter-dark.svg';
 import githubdark from './assets/github-dark.svg';
@@ -27,29 +27,41 @@ function App() {
   return (
     <>
     <div className="font-space-grotesk">
-      <div>
-        <img src={profilepic} className="rounded-full  object-cover w-64 h-64" alt="profile picture of shawn monteiro"/>
-        <img src={sunpic} onClick={toggleTheme} className="rounded " alt="profile picture of shawn monteiro"/>
-        <button onClick={toggleTheme}>
-      Switch to {theme === 'light' ? 'dark' : 'light'} mode
-    </button>
+      <div className="flex  align-bottom  justify-center mt-12" >
+        <img src={profilepic} className="rounded-full  object-cover w-64 h-64  " alt="profile picture of shawn monteiro"/>
+        <img src={themeIcon} onClick={toggleTheme} className="w-6 h-12 " alt="light/dark"/>
       </div>
-      <div>
-      <h1 className="text-3xl">Shawn<br/>Monteiro</h1>
-      <h2>Aspiring Software developer</h2>
-      <span>
-        <a href="https://github.com/shawnmont772004"><img src={githublight} alt="githubicon"/></a>
+      <div className="mt-6">
+      <h1 className="flex justify-center text-3xl ">Shawn Monteiro</h1>
+      <h2 className="flex justify-center ">Aspiring Software developer</h2>
+      <div className="flex justify-center gap-4 mt-4">
+      <span className="w-12">
+        <a href="https://github.com/shawnmont772004"><img src={githubIcon} alt="githubicon"/></a>
       </span>
-      <span>
-        <a href="https://www.linkedin.com/in/monteiroshawn/"><img src={linkedinlight} alt="linkedinicon"/></a>
+      <span className="w-12">
+        <a href="https://www.linkedin.com/in/monteiroshawn/"><img src={linkedinIcon} alt="linkedinicon"/></a>
       </span>
-      <span>
-        <a href="https://x.com/ShawnMonteiro2"><img src={twitterlight} alt="tweeticon"/></a>
+      <span className="w-12">
+        <a href="https://x.com/ShawnMonteiro2"><img src={twitterIcon} alt="tweeticon"/></a>
       </span>
-      <p>
-        To explore the world of software developmeent in its bits
-      </p>
-      <a href={resume} download><button onClick={()=>{alert("Downloading resume'...")}} className=" bg-customYellow p-2 rounded-md border-black border-2">Resume'</button></a>
+      </div>
+      <div className="flex justify-center mt-4 px-4 sm:px-0">
+        <p className="text-center">
+          To explore the world of software development in its bits
+        </p>
+      </div>
+
+      <div className="mt-4 flex justify-center items-center">
+      <a href={resume} download><button onClick={()=>{alert("Downloading resume'...")}} className="  p-3 rounded-md border-grey bg-black text-white border-2 font-semibold">Resume'</button></a>
+      </div>
+      <a href={resume} download>
+      </a>
+
+      <div className="">
+      <Projects />
+      </div>
+
+      
     </div>
 
     </div>
