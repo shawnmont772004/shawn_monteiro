@@ -7,7 +7,9 @@ import githublight from './assets/github-light.svg'
 import twitterlight from './assets/twitter-light.svg'
 import linkedinlight from './assets/linkedin-light.svg'
 import resume from './assets/shawnMonteiro.pdf'
+
 import Projects from './components/Projects.jsx'
+import Skills from './components/Skills.jsx'
 
 import twitterdark from './assets/twitter-dark.svg';
 import githubdark from './assets/github-dark.svg';
@@ -59,6 +61,9 @@ function App() {
 
       <div className="">
       <Projects />
+      </div>
+      <div className="">
+      <Skills />
       </div>
 
       
