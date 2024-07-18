@@ -66,6 +66,11 @@ function App() {
       <Skills />
       </div>
 
+      <div className="p-4 mb-6">
+        <p className="text-center mt-4">© 2024. All rights reserved.<span>By Shawn Monteiro</span></p>
+
+      </div>
+
       
     </div>
 
