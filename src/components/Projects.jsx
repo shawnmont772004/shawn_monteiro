@@ -9,35 +9,35 @@ const projects = [
     image: bimg,
     shortDescription: 'A mini atm that helps you in managing your account and carry transactions.',
     fullDescription: 'JAVA based application that registers users, generates ATM card numbers and PINs, and allows account selection, deposit & withdrawal functions. Also implement fast cash withdrawals maintains transaction history for user.Database MySQL along with JDBC to connect with JAVA program.',
-    link: 'https://example.com/project1'
+    link: 'https://github.com/shawnmont772004/BMS'
   },
   {
     title: 'CupidStream',
     image: csimg,
     shortDescription: 'Long-Distance Video Chat with Synchronized YouTube Streaming',
     fullDescription: 'Created a WebRTC-powered app for long-distance video calls and synchronized YouTube streaming, employing React and Tailwind CSS. Integrated peer-to-peer video calls with unique ID sharing via email, supported by Socket.io and Node.js. Enabled seamless YouTube streaming during video calls, empowering users to switch videos effortlessly through a user-friendly interface',
-    link: 'https://example.com/project2'
+    link: 'https://cupidstream.netlify.app/'
   },
   {
     title: 'Healthcare website',
     image: docimg,
     shortDescription: 'symtpom anlayzer cum diagnosis platform',
     fullDescription: 'Created a platform for medicine sales with a symptom analyzer with random questions to identify symptoms and connect users with specialized doctors. Designed and built the platform using HTML, CSS, JS, JQuery and MySQL.',
-    link: 'https://example.com/project3'
+    link: 'https://github.com/shawnmont772004/Sjec-Hackathon'
   },
   {
     title: 'KickStart Up App',
     image: stupimg,
     shortDescription: 'A CrowdFunding Platform',
     fullDescription: 'Launched a crowdfunding e-commerce platform connecting startups with investors to driveinnovation. Utilized Vue.js, Firebase, QuillEditor API, and Tailwind CSS for seamless functionality and user experience.',
-    link: 'https://example.com/project4'
+    link: 'https://main--monumental-arithmetic-0c4361.netlify.app/'
   },
 ];
 
 const Projects = () => {
   return (
     <div className="container mx-auto p-12 mt-6">
-      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 xl:grid-cols-2 gap-12 mb-8 bg-">
+      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 xl:grid-cols-2 gap-12 mb-8 text-center">
         {projects.map((project, index) => (
           <a 
             key={index} 
